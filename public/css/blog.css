@@ -1,0 +1,124 @@
+.blog-icon{
+    padding-top: 40px;
+    background-color: #688486;
+    border: 1px solid #688486;
+}
+
+.blog-icon img{
+    width: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-title{
+    background-color: #688486;
+    border: 1px solid #688486;
+    color: #eae6dd;
+    text-align: center;
+    font-family: 'Azeret Mono', monospace;
+    padding: 50px 90px;
+    padding-bottom: 80px;
+    font-weight: bolder;
+    font-size: 70px;
+
+}
+
+
+.blog-page{
+    background-color: #688486;
+    border: 1px solid #688486;
+    padding-bottom: 40px;
+}
+.banner-blog{
+    width: 70%;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: #eae6dd;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.published{
+    padding: 30px 80px;
+    color: #272727;
+    white-space: normal;
+    background-color: #eae6dd;
+    width: 80%;
+    margin-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+}
+
+.article{
+    text-align: center;
+    position: relative;
+    min-height: auto;
+    height: fit-content;
+    padding: 10px 80px;
+    font-size: 25px;
+    color: #272727;
+    white-space: normal;
+    background-color: #eae6dd;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 80px;
+}
+
+article *{
+    margin: 30px 0;
+}
+.article-image{
+    margin: 80px 0;
+    max-width: 100%;
+    max-height: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+@media(max-width:850px){
+    .blog-title{
+        font-size: 10vw;
+    }
+
+    .article, .published{
+        padding: 10px 5%;
+    }
+
+    .banner-blog{
+        width: 90%;
+        height: 300px;
+    }
+
+}
+
+@media(max-width:500px){
+    .blog-title{
+        font-size: 13vw;
+        padding: 10% 5%;
+    }
+
+    .article, .published{
+        font-size: 5.5vw;
+        padding: 10px 5%;
+    }
+
+    .article-image{
+        margin: 5% 0;
+    }
+}

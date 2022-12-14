@@ -1,0 +1,117 @@
+.countries-title{
+    background-image: url("worldmap1.png");
+    background-size: cover;
+    text-align: center;
+    color: #120d0d;
+  
+}
+
+.countries-title h1{
+    font-family: 'Azeret Mono', monospace;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.countries-title p{
+    font-weight: lighter;
+    font-size: 20px;
+    padding-bottom: 150px;
+}
+
+.asia-title{
+    background-color: #b7aac4;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.asia-title h2{
+    font-family: 'Azeret Mono', monospace;
+    border-radius: 10px;
+    border: 5px solid #977794;
+    padding: 40px;
+    margin: 0 20%;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #3a3031;
+    background-color: #f3ebda;
+    
+}
+
+.asia-desc{
+    background-color: #b7aac4;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1%;
+}
+
+.box{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 5px solid #977794;
+    padding: 2%;;
+    width: 40%;
+    margin: 100px auto;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+    transition: 0.5s;
+}
+
+.box img{
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.box a{
+    text-decoration: none;
+    text-align: center;
+    color: #3a3031;
+    font-size: 25px;
+    font-family: 'Azeret Mono', monospace;
+
+}
+
+.box:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}
+
+@media(max-width:1000px){
+    .box{
+        width: 65%;
+    }
+}
+
+
+@media(max-width:650px){
+    .countries-title h1{
+        font-size: 10vw;
+    }
+
+    .box{
+        width: 70%;
+    }
+
+    .box a{
+        font-size: 4vw;
+    }
+}
+
+
+@media(max-width:500px){
+    .box:hover{
+        transform: scale(1);
+        z-index: 1;
+    }
+
+    .box{
+        width: 90%;
+    }
+
+    .asia-desc{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+

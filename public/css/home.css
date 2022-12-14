@@ -1,0 +1,655 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+/*MENU BAR*/
+.nav-bar{
+    padding: 0;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f8f6;
+}
+
+.logo img{
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    
+    width: 100px;;
+    margin: 10px;
+}
+
+.title h1{
+    font-family: 'Azeret Mono', monospace;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.tabs{
+
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: 90px;
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.tabs li {
+    text-transform: uppercase;
+    display: flex;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 15px;
+    padding: 15px;
+    z-index: 2;
+    position: relative;
+    margin: 10px;
+
+}
+
+.tabs a{
+    color: black;
+    text-decoration: none;
+}
+
+.tabs li::after{
+    content: '';
+    background: #BDD1C5;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.tabs li:hover{
+    color: black;
+    font-weight: bolder;
+    transition: all 1.0s ease;
+}
+
+.tabs li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+.icon img{
+    width: 25px;
+}
+
+.menu-bar img{
+    position: relative;
+    width: 30px;
+    margin-left: auto;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-bar img:hover{
+    padding: 5px;
+    border: 5px solid #BDD1C5;
+    border-radius: 10px;
+    background-color: #BDD1C5;
+    transition: all 0.5s ease;
+}
+
+.tabs{
+
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: 90px;
+    text-align: center;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.tabs li {
+    text-transform: uppercase;
+    display: flex;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 15px;
+    padding: 15px;
+    z-index: 2;
+    position: relative;
+    margin: 10px;
+
+}
+
+.tabs a{
+    color: black;
+    text-decoration: none;
+}
+
+.tabs li::after{
+    content: '';
+    background: #BDD1C5;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.tabs li:hover{
+    color: black;
+    font-weight: bolder;
+    transition: all 1.0s ease;
+}
+
+.tabs li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.sub-menu{
+    display: none;
+    background: #BDD1C5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.tabs li:hover .sub-menu{
+    text-align: center;
+    display: block;
+    position: absolute;
+    bottom: -93px;
+    left: -2px;
+    background: #ffffff;
+
+    
+}
+.icon img{
+    width: 25px;
+}
+
+.menu-bar img{
+    position: relative;
+    width: 30px;
+    margin-left: auto;
+    display: none;
+    cursor: pointer;
+}
+
+.menu-bar img:hover{
+    padding: 5px;
+    border: 5px solid #BDD1C5;
+    border-radius: 10px;
+    background-color: #BDD1C5;
+    transition: all 0.5s ease;
+}
+
+
+
+.mission-page{
+    display: flex;
+    flex-direction: column;
+    background-color: #8ca87c;
+    text-align: center;
+    padding-bottom: 13%;
+
+}
+
+.mission-desc h1{
+    padding: 2%;
+    font-family: 'Azeret Mono', monospace;
+    font-size: 5vw;
+    margin-top: 3%;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+.mission-desc p{
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+.mission-desc img{
+    margin: 20px;
+    width: 40%;
+    float: right;
+    background-color: #ffffff;
+}
+
+.mission-desc a{
+    margin-top: 80px;
+    font-size: 35px;
+    background-color: #cbddd1;
+    border-radius: 80px;
+    padding: 3%;
+    color: #272727;
+    font-weight: bold;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+    position: relative;
+}
+
+
+.mission-desc a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #272727;
+    transition: width 0.3s;
+}
+.mission-desc a:hover::after{
+    width: 50%;
+}
+
+.benefits-page{
+    display: flex;
+    text-align: center;
+    font-family: 'Azeret Mono', monospace;
+    background-color: #94635C;
+}
+
+.benefits-desc h1{
+    font-family: 'Azeret Mono', monospace;
+    margin: 4% 0;
+    font-size: 50px;
+    font-weight: bolder;
+    color: #e9d2d9;
+}
+
+.benefits-desc{
+    font-style: 'Dosis', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 8%
+}
+
+.row{
+
+    width: 100%;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+}
+
+
+.benefits-col{
+    margin: 40px;
+    background-color: #e9d2d9;
+    padding: 30px;
+    border-radius: 30px;
+    
+}
+
+.benefits-col h3{
+    font-weight: bold;
+    margin: 30px 0;
+    font-size: 5vh;
+}
+
+.benefits-col a{
+    text-decoration: none;
+
+}
+
+.benefits-col a:hover{
+    color: rgb(73, 63, 63);
+    transition: all 0.5s ease;
+    text-decoration: underline;
+}
+
+.benefits-page img{
+    object-fit: cover;
+    width: 50%;
+    background-color: #f6f8f6;
+    border-radius: 60px;
+    border: 2px solid black;
+
+}
+.month-page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #A1405A;
+}
+
+
+.month-title img{
+    margin: 20px;
+    width: 30%;
+    border-radius: 60px;
+    border: 25px solid white;
+}
+
+.month-desc{
+    background-color: #A1405A;
+    padding-bottom: 80px;
+}
+
+
+.border img{
+    float: left;
+    width: 20%;
+}
+
+
+.about-slider{
+    position: relative;
+    margin: 30px auto;
+    width: 45vw;
+    height: 85vh;
+    overflow: hidden;
+    border: 8px solid white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.image.active img{
+    display:block;
+}
+.image img{
+    margin: auto;
+    display: none;
+    width: 100%;
+    height: 85vh;
+}
+
+.image a:hover{
+    opacity: 0.5;
+    transition: all 0.5s ease;
+
+}
+
+.prev img, .next img{
+    cursor: pointer;
+    width: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+}
+
+.prev img{
+    left: 10px;
+}
+
+.next img{
+    right: 10px;
+}
+
+.month-desc p{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: 0 150px;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+
+.monthlink a{
+    padding: 3%;
+    font-size: 35px;
+    background-color: #ffffff;
+    border-radius: 80px;
+    color: #272727;
+    font-weight: bold;
+    font-family: 'Azeret Mono', monospace;
+    text-decoration: none;
+    position: relative;
+
+}
+
+.monthlink a::after{
+    content: '';
+    width: 0;
+    height: 5px;
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #272727;
+    transition: width 0.3s;
+}
+
+.monthlink a:hover::after{
+    width: 50%;
+}
+
+
+.contact-page{
+    font-family: 'Azeret Mono', monospace;
+    background-color: #f5f0f0;
+    text-align: center;
+    margin: auto;
+
+}
+
+.contact-page h2{
+    font-size: 45px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+.contact-page p{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.ig-icon img{
+    width: 40px;
+    margin: 40px;
+    margin-bottom: 15px;
+    
+}
+
+.attribute a{
+    color: black;
+    text-decoration: none;
+}
+
+@media(max-width:1270px){
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabs{
+        margin: auto;
+        border-radius: 10px;
+    }
+
+    .title h1{
+        margin-bottom: 30px;
+    }
+
+    
+
+}
+
+@media(max-width:1055px){
+    .row{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2%;
+    }
+
+    .benefits-col{
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .mission-desc h1{
+        font-size: 6vw;
+    }
+
+    .mission-desc p{
+        font-size: 1.5vw;
+    }
+
+    .mission-desc a, .monthlink a{
+        padding: 3%;
+    }
+
+    .mission-desc a::after, .monthlink a::after{
+        bottom: 15%
+    }
+
+    .about-slider{
+        width: 75vw;
+    }
+
+    .image img{
+        width: 75vw;
+    }
+
+    
+}
+
+
+@media(max-width:650px){
+
+    .title{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .menu-bar img{
+        z-index: 2;
+        display: block;
+        position: relative;
+        margin: 25px;
+
+    }
+
+    .tabs{
+        position: fixed;
+        height: 100%;
+        left: 100%;
+        top: 0px;
+        gap: 2px;
+        background-color: #f5f0f0;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+
+    .tabs li{
+        font-size: 4vw;
+        margin: 16px 0px;
+    }
+
+    .tabs li::after{
+
+        left: 48%;
+    
+    }
+
+    .tabs.active{
+        z-index: 2;
+        left: 0px;
+        top: 0px;
+        height: 100%;
+    }
+
+    .mission-desc h1, .benefits-desc h1{
+        font-size: 12vw
+    }
+
+    .mission-desc p{
+        font-size: 3.5vw;
+        padding: 0 10%;
+    }
+
+    .mission-desc img{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .mission-desc a::after, .monthlink a::after{
+        bottom: 5%;
+    }
+   
+    .benefits-page{
+        padding-bottom: 20%;
+
+    }
+
+    .month-title img{
+        width: 70%;
+    }
+
+    
+
+    .contact-page{
+        padding: 0 10%;
+    }
+
+    .about-slider{
+        width: 80%;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+
+    .month-desc p{
+        padding: 0 5%;
+    }
+
+}
+
+@media(max-width:500px){
+    .about-slider{
+        height: 60vh;
+    }
+
+    .image img{
+        height: 60vh;
+    }
+
+
+    
+
+}
+
+@media(max-width:320px){
+    .tabs li{
+        margin-top: 150px;
+    }
+}
+

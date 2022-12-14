@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Blog : Editor </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content ="ie=edge">
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/editor.css">
+    <link rel="stylesheet" href="css/blog.css">
+
+</head>
+
+<body>
+
+    <div class="banner">
+        <input type="file" accept="image/*" id="banner-upload" hidden>
+        <label for="banner-upload" class="banner-upload-btn">
+            <img src="img/upload.png">
+        </label>
+    </div>
+
+    <div class="blog">
+        <h1> Blog Title </h1>
+        <textarea type="text" class="title"> </textarea>
+        <h1> Start writing about blog </h1>
+        <textarea type="text" class="article"></textarea>
+    </div>
+
+    <div class="blog-options">
+        <button class="btn dark publish-btn"> publish </button>
+        <input type="file" accept="image/#" id="image-upload" hidden>
+        <label for="image-upload" class="btn grey upload-btn"> upload image </label>
+    </div>
+
+    <script type="module" src="js/firebase.js"></script>
+
+</body>
